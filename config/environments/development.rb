@@ -37,21 +37,21 @@ Rails.application.configure do
   config.active_storage.service = :local
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
 
   config.action_mailer.perform_caching = false
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    user_name: '2f0bd57abc33d8',
-    password: '8babc8663915fb',
-    address: 'sandbox.smtp.mailtrap.io',
-    host: 'sandbox.smtp.mailtrap.io',
-    port: '2525',
+    user_name: 'api',
+    password: 'f4f93407422be99bcb513f97f27b5cf7',
+    address: 'live.smtp.mailtrap.io',
+    host: 'live.smtp.mailtrap.io',
+    port: '587',
     authentication: :login,
-    enable_starttls_auto: true
   }
-
+  # enable_starttls_auto: true
+  
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
