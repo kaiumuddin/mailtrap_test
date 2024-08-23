@@ -2,7 +2,7 @@ class NotifierMailer < ApplicationMailer
     def new_account(email)
         mail(
             to: email,
-            subject: "New account information",
+            subject: "New account information 2",
         )
     end
 end
