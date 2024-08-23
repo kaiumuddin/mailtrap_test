@@ -49,9 +49,9 @@ Rails.application.configure do
     host: 'live.smtp.mailtrap.io',
     port: '587',
     authentication: :login,
+    enable_starttls_auto: true
   }
-  # enable_starttls_auto: true
-  
+
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
